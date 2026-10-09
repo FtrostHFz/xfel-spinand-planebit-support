@@ -1,6 +1,10 @@
 # XFEL
 Tiny FEL tools for Allwinner SOC.
 
+fixed the plane bit bug for spinand where the 256 page size or 4k page size chip were not detected correctly. specially for chips that have 2 or 4 plane. the code should support both 1 plane and multiple plane.
+
+for example this code was fixed using micron MT29F2G01ABAGD. it was detected as 1g originally. now it is detected as 2g with 2 plane.
+
 [Documentation](https://xfel.xboot.org/) &mdash;
 [Support Lists](https://xfel.xboot.org/reference/support-list/) &mdash;
 [Releases](https://github.com/xboot/xfel/releases/)
